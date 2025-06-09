@@ -17,13 +17,9 @@ export class SidebarComponent implements AfterViewInit, OnInit{
   }
  
   goToDashboard(){
-    if(this.userType=="1"){
+    // if(this.userType=="1"){
       this.router.navigateByUrl("/dashboard");
-    }else if(this.userType =="2"){
-      this.router.navigateByUrl("/dashboard/hr");
-    }else{
-      this.router.navigateByUrl("/dashboard/employee");
-    }
+    // }
   }
   goToBanks(){ this.router.navigateByUrl("/banks"); }
   activeMenu: string | null = null;
