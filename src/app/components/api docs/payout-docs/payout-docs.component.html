@@ -1,0 +1,312 @@
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+    <div class="content">
+
+        <!-- Breadcrumb -->
+        <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
+            <div class="my-auto mb-2">
+                <h2 class="mb-1">API Docs</h2>
+
+            </div>
+            <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
+                <div class="mb-2">
+                    <!-- <a [routerLink]="['/users/create']" class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Create user</a> -->
+                </div>
+
+            </div>
+        </div>
+        <!-- /Breadcrumb -->
+
+        <!-- Project list -->
+        <div class="card">
+            <div class="card-header d-flex justify-content-between grediante">
+                <h4 class="text-white">Payout</h4>
+
+                <button class="btn btn-large btn-warning text-black" (click)="back()"><i
+                        class="fa-solid fa-circle-arrow-left"></i> Back</button>
+            </div>
+            <!-- <input class="form-control" type="text" placeholder="Search user.."> -->
+            <div class="card-body p-0">
+                <!--payout-->
+                <div class="card" ng-app="">
+                    <div class="card-header">
+                        <h2 class="text-primary">PAYOUT</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="content-page">
+                            <div class="table-responsive p-2">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td style="color:#000">URL</td>
+                                            <td style="color:#000">
+                                                https://www.apnabank.com/bankingapi/rest/auth/transaction/payout
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">METHOD</td>
+                                            <td style="color:#000">POST</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Header</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">Content Type</td>
+                                            <td style="color:#000">application/json</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">Authorization</td>
+                                            <td style="color:#000">Bearer <b>Put your generated token here</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Parameters</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" title="Required">beneName<sup class="text-danger"><i
+                                                        class="fa fa-asterisk"></i></sup></td>
+                                            <td style="color:#000">Devid marshe</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" title="Required">beneAccountNo<sup
+                                                    class="text-danger"><i class="fa fa-asterisk"></i></sup></td>
+                                            <td style="color:#000">1236541211</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" title="Required">beneifsc<sup class="text-danger"><i
+                                                        class="fa fa-asterisk"></i></sup></td>
+                                            <td style="color:#000">valid ifsc code here</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" title="Required">benePhoneNo<sup
+                                                    class="text-danger"><i class="fa fa-asterisk"></i></sup></td>
+                                            <td style="color:#000">9658XXXXX0</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" title="Required">beneBankName<sup
+                                                    class="text-danger"><i class="fa fa-asterisk"></i></sup></td>
+                                            <td style="color:#000">XXXXXXXXXXXXXXX</td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td style="color:#000" title="Required">clientReferenceNo<sup
+                                                    class="text-danger"><i class="fa fa-asterisk"></i></sup></td>
+                                            <td style="color:#000">12XXXXXXXXXXXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" title="Required">amount<sup class="text-danger"><i
+                                                        class="fa fa-asterisk"></i></sup></td>
+                                            <td style="color:#000">1XXX</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Sample Request Body</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" colspan="2">
+
+                                                <h3>{{ '{'}}</h3>
+                                                <div class="payload">
+                                                    <h4>"beneName": "XXXXXXXXXXXX",</h4>
+                                                    <h4>"beneAccountNo": "01XXXXXXXXX3",</h4>
+                                                    <h4>"beneIfsc": "KKXXXXXXXXXX1",</h4>
+                                                    <h4>"benePhoneNo": 99XXXXXXXX8,</h4>
+                                                    <h4>"beneBankName": "kXXXXXXXXXXXXXk",</h4>
+                                                    <h4>"clientReferenceNo": "2XXXXXXXXXX1",</h4>
+                                                    <h4>"amount": 100,</h4>
+                                                </div>
+                                                <h3>{{ '}'}}</h3>
+
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Sample Response Body</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" colspan="2">
+                                                <h3>{{ '{'}}</h3>
+                                                <div class="payload">
+
+                                                    <h4>"amount": "100.0",</h4>
+                                                    <h4>"UTR": "12XXXXXXX789965",</h4>
+                                                    <h4>"isError": "false",</h4>
+                                                    <h4>"clientReferenceNo": "2XXXXXXXXXX1",</h4>
+                                                    <h4>"status": "SUCCESS",</h4>
+                                                    <h4>"txnId": "1xxxxxxxxxxxxxxxxx8",</h4>
+                                                    <h4>"msg": "Transaction success",</h4>
+                                                </div>
+                                                <h3>{{ '}'}}</h3>
+                                            </td>
+                                        </tr>
+
+                                    </thead>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--end row-->
+
+                <!-- callback-->
+                <div class="card" ng-app="">
+                    <div class="card-header">
+                        <h2 class="text-primary">CALLBACK</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="content-page">
+                            <div class="table-responsive p-2">
+                                <table class="table table-bordered">
+                                    <thead>
+
+                                        <tr>
+                                            <td style="color:#e34e4e" colspan="2">NOTE : <span
+                                                    style="color:#000"><b>Here We have Provided a sample request format
+                                                        for call back , so please create your callback page
+                                                        accordingly</b></span> </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#e34e4e" colspan="2">Sample callback URL</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">Call Back URL</td>
+                                            <td style="color:#000">https://yourdomain.com/dynamicpayoutcallback</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">Format</td>
+                                            <td style="color:#000">JSON</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" colspan="2">
+
+                                                <h3>{{ '{'}}</h3>
+                                                <div class="payload">
+                                                    <h4>"amount": "100.0",</h4>
+                                                    <h4>"UTR": "12XXXXXXX789965",</h4>
+                                                    <h4>"isError": "false",</h4>
+                                                    <h4>"clientReferenceNo": "2XXXXXXXXXX1",</h4>
+                                                    <h4>"status": "SUCCESS",</h4>
+                                                    <h4>"txnId": "1xxxxxxxxxxxxxxxxx8",</h4>
+                                                    <h4>"msg": "Transaction success",</h4>
+                                                </div>
+                                                <h3>{{ '}'}}</h3>
+                                            </td>
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--end row-->
+
+                <!-- check status -->
+                <div class="card" ng-app="">
+                    <div class="card-header">
+                        <h2 class="text-primary">Check Status</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="content-page">
+                            <div class="table-responsive p-2">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td style="color:#000">URL</td>
+                                            <td style="color:#000">
+                                                https://www.apnabank.com/bankingapi/rest/auth/transaction/payout/checkStatus
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">METHOD</td>
+                                            <td style="color:#000">POST</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Header</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">Content Type</td>
+                                            <td style="color:#000">application/json</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">Authorization</td>
+                                            <td style="color:#000">Bearer <b>Put your generated token here</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Parameters</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" title="Required">clientReferenceNo<sup class="text-danger"><i
+                                                        class="fa fa-asterisk"></i></sup></td>
+                                            <td style="color:#000">1XXXXXXXXXXX9,</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" title="Required">txnType<sup class="text-danger"><i
+                                                        class="fa fa-asterisk"></i></sup></td>
+                                            <td style="color:#000">PAYOUT,</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Sample Request Body</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" colspan="2">
+
+                                                <h3>{{ '{'}}</h3>
+                                                <div class="payload">
+                                                    <h4>"clientReferenceNo": "2XXXXXXXXXX1",</h4>
+                                                    <h4>"txnType": "PAYOUT",</h4>
+                                                </div>
+                                                <h3>{{ '}'}}</h3>
+
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Sample Response Body</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" colspan="2">
+
+
+                                                <h3>{{ '{'}}</h3>
+                                                <div class="payload">
+                                                    <h4>"amount": "100.0",</h4>
+                                                    <h4>"UTR": "12XXXXXXX789965",</h4>
+                                                    <h4>"isError": "false",</h4>
+                                                    <h4>"clientReferenceNo": "2XXXXXXXXXX1",</h4>
+                                                    <h4>"status": "SUCCESS",</h4>
+                                                    <h4>"txnId": "1xxxxxxxxxxxxxxxxx8",</h4>
+                                                    <h4>"msg": "Transaction success",</h4>
+                                                </div>
+
+                                                <h3>{{ '}'}}</h3>
+
+                                            </td>
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--end row-->
+            </div>
+        </div>
+        <!-- / Project list  -->
+
+    </div>
+</div>
+<!-- /Page Wrapper -->

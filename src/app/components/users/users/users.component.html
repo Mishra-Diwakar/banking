@@ -1,0 +1,71 @@
+	<!-- Page Wrapper -->
+		<div class="page-wrapper">
+			<div class="content">
+
+				<!-- Breadcrumb -->
+				<div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
+					<div class="my-auto mb-2">
+						<h2 class="mb-1">Users</h2>
+						
+					</div>
+					<div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
+						<div class="mb-2">
+							<a [routerLink]="['/users/create']" class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Create user</a>
+						</div>
+						
+					</div>
+				</div>
+				<!-- /Breadcrumb -->
+
+				<!-- Project list -->
+				<div class="card">
+					<div class="card-header d-flex justify-content-between grediante">
+						<h4 class="text-white">All User</h4>
+                      
+                        <button class="btn btn-large btn-warning text-black" (click)="back()"><i class="fa-solid fa-circle-arrow-left"></i> Back</button>
+					</div>
+                     <input class="form-control" type="text" placeholder="Search user..">
+					<div class="card-body p-0">
+						<div class="custom-datatable-filter table-responsive">
+                             
+							<table class="table">
+								<thead class="thead-light">
+									<tr>
+										<th>Sr.No</th>
+										<th>Username</th>
+                                        <th>Main Wallet</th>
+                                        <th>Payout Wallet</th>
+										<th>Email</th>
+										<th>Mobile</th>
+                                        <th>Status</th>
+                                        <th>Created At</th>
+                                        <th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+                                        <td>Diwakar</td>
+										<td>50,000</td>
+										<td>10,000</td>
+										<td>diwakar@gmail.com</td>
+                                        <td>9685741425</td>
+                                        <td>Active</td>
+										<td>2025-06-02 16.20.23</td>
+										<td>
+											<div class="action-icon d-inline-flex">
+												<a [routerLink]="['/users/update']" title="Edit user"><i class="ti ti-edit"></i></a>
+                                                <a [routerLink]="['/users/fund']" title="Wallet Action"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                                                <a [routerLink]="['/users/action']" title="More Action"><i class="fa-solid fa-angles-right"></i></a>
+											</div>
+										</td>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- / Project list  -->
+
+			</div>
+		</div>
+		<!-- /Page Wrapper -->

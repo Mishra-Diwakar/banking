@@ -1,0 +1,299 @@
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+    <div class="content">
+
+        <!-- Breadcrumb -->
+        <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
+            <div class="my-auto mb-2">
+                <h2 class="mb-1">API Docs</h2>
+
+            </div>
+            <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
+                <div class="mb-2">
+                    <!-- <a [routerLink]="['/users/create']" class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Create user</a> -->
+                </div>
+
+            </div>
+        </div>
+        <!-- /Breadcrumb -->
+
+        <!-- Project list -->
+        <div class="card">
+            <div class="card-header d-flex justify-content-between grediante">
+                <h4 class="text-white">Payin</h4>
+
+                <button class="btn btn-large btn-warning text-black" (click)="back()"><i
+                        class="fa-solid fa-circle-arrow-left"></i> Back</button>
+            </div>
+            <!-- <input class="form-control" type="text" placeholder="Search user.."> -->
+            <div class="card-body p-0">
+                <!--generate upi-->
+                <div class="card" ng-app="">
+                    <div class="card-header">
+                        <h2 class="text-primary">Generate UPI</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="content-page">
+                            <div class="table-responsive p-2">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td style="color:#000">URL</td>
+                                            <td style="color:#000">
+                                                https://www.apnabank.com/bankingapi/rest/auth/transaction/payin/intent
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">METHOD</td>
+                                            <td style="color:#000">POST</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Header</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">Content Type</td>
+                                            <td style="color:#000">application/json</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">Authorization</td>
+                                            <td style="color:#000">Bearer <b>Put your generated token here</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Parameters</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" title="Required">amount<sup class="text-danger"><i
+                                                        class="fa fa-asterisk"></i></sup></td>
+                                            <td style="color:#000">Enter amount</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" title="Required">option<sup class="text-danger"><i
+                                                        class="fa fa-asterisk"></i></sup></td>
+                                            <td style="color:#000">"INTENT"</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Sample Request Body</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" colspan="2">
+
+                                                <h3>{{ '{'}}</h3>
+                                                <div class="payload">
+                                                    <h4>"amount": 100,</h4>
+                                                    <h4>"option": "INTENT"</h4>
+                                                </div>
+
+                                                <h3>{{ '}'}}</h3>
+
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Sample Response Body</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" colspan="2">
+
+                                                <h3>{{ '{'}}</h3>
+                                                <div class="payload">
+                                                    <h4>"amount": "100.0",</h4>
+                                                    <h4>"msg": "INTENT generated successfully",</h4>
+                                                    <h4>"intentData":
+                                                        "upi://pay?pa=8XXXXXXX7@indus&pn=VXXXXXh%20Store&mc=6012&tr=1XXXXXXXXXXXX88&tn=Shopp
+                                                        ing&am=100.0&mode=04&tid=APNAXXXXXXXXXX55",</h4>
+                                                    <h4>"status": "INITIATED",</h4>
+                                                </div>
+
+                                                <h3>{{ '}'}}</h3>
+
+
+                                            </td>
+                                        </tr>
+
+                                    </thead>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--end row-->
+
+                <!--callback-->
+                <div class="card" ng-app="">
+                    <div class="card-header">
+                        <h2 class="text-primary">CALLBACK</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="content-page">
+                            <div class="table-responsive p-2">
+                                <table class="table table-bordered">
+                                    <thead>
+
+                                        <tr>
+                                            <th style="color:#e34e4e" colspan="2">NOTE : <span
+                                                    style="color:#000"><b>Here We
+                                                        have Provided a sample request format for call back , so please
+                                                        create
+                                                        your callback page accordingly</b></span> </th>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#e34e4e" colspan="2">Sample callback URL</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">Call Back URL</td>
+                                            <td style="color:#000">https://yourdomain.com/dynamicupicallback</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">Method</td>
+                                            <td style="color:#000">POST</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" colspan="2">
+                                                <h3>{{ '{'}}</h3>
+                                                <div class="payload">
+                                                    <h4>"amount":"100.0",</h4>
+                                                    <h4>"utr":"3xxxxxxxxxxxx3",</h4>
+                                                    <h4>"name":"xxxxxxxxxxxxxxxxxI",</h4>
+                                                    <h4>"txnId":"1XXXXXXXXXXXXXX8",</h4>
+                                                    <h4>"upi":"7xxxxxxxx2@paytm",</h4>
+                                                    <h4>"status":"SUCCESS"</h4>
+                                                    <h4>"isError": "false",</h4>
+                                                </div>
+                                                <h3>{{ '}'}}</h3>
+                                                <h3 class="text-danger">You can match your transaction according to
+                                                    <b>txnId</b>
+                                                </h3>
+
+                                            </td>
+                                        </tr>
+
+                                    </thead>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--end row-->
+                <!--checkstatus upi-->
+                <div class="card" ng-app="" *ngIf="isHide">
+                    <div class="card-header">
+                        <h2 class="text-primary">Check Status</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="content-page">
+                            <div class="table-responsive p-2">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td style="color:#000">URL</td>
+                                            <td style="color:#000">
+                                                https://www.apnabank.com/bankingapi/rest/auth/transaction/payin/status/enquiry
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">METHOD</td>
+                                            <td style="color:#000">POST</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="color:#e34e4e" colspan="2">Header</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">Content Type</td>
+                                            <td style="color:#000">application/json</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">Authorization</td>
+                                            <td style="color:#000">Bearer <b>Put your generated token here</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#e34e4e" colspan="2">Parameters</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">txnId</td>
+                                            <td style="color:#000">1XXXXXXXXXXX9,</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">txnType</td>
+                                            <td style="color:#000">"PAYIN",</td>
+                                        </tr>
+                                        <!-- <tr>
+                                    <th style="color:#000">txnStartDate</th>
+                                    <td style="color:#000">"enter txn date here",</td>
+                                </tr>
+                                <tr>
+                                    <th style="color:#000">txnEndDate</th>
+                                    <td style="color:#000">"enter txn date here",</td>
+                                </tr>
+                                <tr>
+                                    <th style="color:#000">txnId</th>
+                                    <td style="color:#000">50XXXXXXXXXXXX80</td>
+                                </tr> -->
+
+                                        <tr>
+                                            <td style="color:#e34e4e" colspan="2">Sample Request Body</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" colspan="2">
+
+                                                <h3>{{ '{'}}</h3>
+                                                <div class="payload">
+                                                    <h4>"txnId": "1XXXXXXXXXXX9",</h4>
+                                                    <h4>"txnType": "PAYIN",</h4>
+                                                    <!-- <h4>"txnStartDate": "2023-04-28",</h4>
+                                            <h4>"txnEndDate": "2023-04-28",</h4>
+                                            <h4>"txnId": "50XXXXXXXXXXXX80",</h4> -->
+                                                </div>
+                                                <h3>{{ '}'}}</h3>
+
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="color:#e34e4e" colspan="2">Sample Response Body</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" colspan="2">
+
+                                                <h3>{{ '{'}}</h3>
+                                                <div class="payload">
+                                                    <h4>"amount": 100,</h4>
+                                                    <h4>"utr": "12365XXXXXX",</h4>
+                                                    <h4>"isError": "false",</h4>
+                                                    <h4>"name": "abc user",</h4>
+                                                    <h4>"status": "SUCCESS",</h4>
+                                                    <h4>"txnId": "1XXXXXXXXXXXXXX8",</h4>
+                                                    <h4>"upi": "slkdfj@ybl"</h4>
+                                                </div>
+                                                <h3>{{ '}'}}</h3>
+
+                                            </td>
+                                        </tr>
+
+                                    </thead>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--end row-->
+            </div>
+        </div>
+        <!-- / Project list  -->
+
+    </div>
+</div>
+<!-- /Page Wrapper -->

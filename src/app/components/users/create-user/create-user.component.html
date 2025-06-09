@@ -1,0 +1,201 @@
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+    <div class="content">
+
+        <!-- Breadcrumb -->
+        <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
+            <div class="my-auto mb-2">
+                <h2 class="mb-1">Users</h2>
+
+            </div>
+            <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
+                <div class="mb-2">
+                    <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#add_project"
+                        class="btn btn-primary d-flex align-items-center"><i
+                            class="ti ti-circle-plus me-2"></i>Create</a> -->
+                </div>
+
+            </div>
+        </div>
+        <!-- /Breadcrumb -->
+
+        <!-- Project list -->
+        <div class="card">
+            <div class="card-header d-flex justify-content-between grediante">
+                <h4 class="text-white">Create</h4>
+                <button class="btn btn-large btn-warning text-black" (click)="back()"><i
+                        class="fa-solid fa-circle-arrow-left"></i>
+                    Back</button>
+            </div>
+            <div class="card-body p-2">
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">User Name</label>
+                                <input type="text" class="form-control" id="username" placeholder="Diwakar">
+                            </div>
+                        </div>
+                        <div class=" col-md-3">
+                            <div class="mb-3">
+                                <label for="fname" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="fname" placeholder="Diwakar Mishra">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" class="form-control" id="email" placeholder="diwakar@gmail.com">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="mobile" class="form-label">Mobile</label>
+                                <input type="text" class="form-control" id="mobile" placeholder="8596415236">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="company" class="form-label">Company</label>
+                                <input type="text" class="form-control" id="company" placeholder="apna bank pvt ltd">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="adhar" class="form-label">Adhar</label>
+                                <input type="number" class="form-control" id="adhar" placeholder="256352411025">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="pan" class="form-label">Pan</label>
+                                <input type="text" class="form-control" id="adhar" placeholder="GSKDK5036F">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="pwd" class="form-label">Password</label>
+                                <input type="number" class="form-control" id="pwd" placeholder="12345">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="Noida">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="state" class="form-label">State</label>
+                                <input type="text" class="form-control" id="state" placeholder="Uttar pradesh">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="pincode" class="form-label">Pincode</label>
+                                <input type="text" class="form-control" id="pincode" placeholder="845456">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="dob" class="form-label">DOB</label>
+                                <input type="date" class="form-control" id="dob">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="city" class="form-label">City</label>
+                                <input type="text" class="form-control" id="city" placeholder="mamura">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="lien" class="form-label">Lien</label>
+                                <input type="text" class="form-control" id="lien" placeholder="10000">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label">Payin Service</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="IMPS" selected>A</option>
+                                    <option value="NEFT">B</option>
+                                    <option value="RTGS">C</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label">Payout Service</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="IMPS" selected>A</option>
+                                    <option value="NEFT">B</option>
+                                    <option value="RTGS">C</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label">Payin Status</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="enable" selected>Enable</option>
+                                    <option value="disable">Disable</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label">Payout Status</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="enable" selected>Enable</option>
+                                    <option value="disable">Disable</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="ip" class="form-label">Whitelisted IPs</label>
+                                <input type="text" class="form-control" id="ip" placeholder="102.320.35.21">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="payinUrl" class="form-label">Payin Url</label>
+                                <input type="text" class="form-control" id="payinUrl" placeholder="www.walletload.com/payin">
+                            </div>
+                        </div>
+                         <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="payoutUrl" class="form-label">Payout Url</label>
+                                <input type="text" class="form-control" id="payoutUrl" placeholder="www.walletload.com/payout">
+                            </div>
+                        </div>
+                         <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label">User Status</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="enable" selected>Active</option>
+                                    <option value="disable">DeActive</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-4">
+                            <div class="mb-3">
+                                <button class="btn btn-large btn-success">Submit</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- / Project list  -->
+
+    </div>
+</div>
+<!-- /Page Wrapper -->

@@ -1,0 +1,115 @@
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+    <div class="content">
+
+        <!-- Breadcrumb -->
+        <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
+            <div class="my-auto mb-2">
+                <h2 class="mb-1">Balance Sheets</h2>
+
+            </div>
+            <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
+                <!-- <div class="mb-2">
+                    <a [routerLink]="['/users/create']" class="btn btn-primary d-flex align-items-center"><i
+                            class="ti ti-circle-plus me-2"></i>Create user</a>
+                </div> -->
+
+            </div>
+        </div>
+        <!-- /Breadcrumb -->
+
+        <!-- Project list -->
+        <!-- for filter card -->
+
+        <div class="card p-4">
+            <h2 class="filter-text mb-4">Sheets <i class="fa-solid fa-filter"></i></h2>
+            <form>
+                <div class="row g-3">
+                    <!-- Status Select -->
+                    <div class="col-md-4 col-lg-2">
+                        <label class="form-label">Username</label>
+                        <input type="text" class="form-control" name="" placeholder="username.." id="">
+                    </div>
+
+                    <!-- Date From -->
+                    <div class="col-md-4 col-lg-2">
+                        <label class="form-label">Date From</label>
+                        <input type="date" class="form-control">
+                    </div>
+
+                    <!-- Date To -->
+                    <div class="col-md-4 col-lg-2">
+                        <label class="form-label">Date To</label>
+                        <input type="date" class="form-control">
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="col-md-12 col-lg-2 d-flex align-items-end gap-2 buttons_groups">
+                        <button type="submit" class="btn btn-sm btn-primary" title="Search record"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="card">
+            <div class="card-header d-flex justify-content-between grediante">
+                <h4 class="text-white">Balance Sheets</h4>
+
+                <button class="btn btn-large btn-warning text-black" (click)="back()"><i
+                        class="fa-solid fa-circle-arrow-left"></i> Back</button>
+            </div>
+            <div class="card-body p-0">
+                <div class="custom-datatable-filter table-responsive">
+
+                    <table class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>User</th>
+                                <th>Main Wallet</th>
+                                <th>Payout Wallet</th>
+                                <th>Credit</th>
+                                <th>Debit</th>
+                                <th>Payin</th>
+                                <th>Payout</th>
+                                <th>Processing</th>
+                                <th>Main_to_Payout</th>
+                                <th>Payout_to_Main</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A</td>
+                                <td>150</td>
+                                <td>100</td>
+                                <td>105</td>
+                                <td>100</td>
+                                <td>5</td>
+                                <td>95</td>
+                                <td>100</td>
+                                <td>200</td>
+                                <td>300</td>
+                            </tr>
+                        </tbody>
+                         <tfoot>
+                            <tr>
+                                <td>Total</td>
+                                <td>150</td>
+                                <td>100</td>
+                                <td>105</td>
+                                <td>100</td>
+                                <td>5</td>
+                                <td>95</td>
+                                <td>100</td>
+                                <td>200</td>
+                                <td>300</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- / Project list  -->
+
+    </div>
+</div>
+<!-- /Page Wrapper -->

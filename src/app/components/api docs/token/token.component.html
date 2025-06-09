@@ -1,0 +1,126 @@
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+    <div class="content">
+
+        <!-- Breadcrumb -->
+        <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
+            <div class="my-auto mb-2">
+                <h2 class="mb-1">API Docs</h2>
+
+            </div>
+            <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
+                <div class="mb-2">
+                    <!-- <a [routerLink]="['/users/create']" class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Create user</a> -->
+                </div>
+
+            </div>
+        </div>
+        <!-- /Breadcrumb -->
+
+        <!-- Project list -->
+        <div class="card">
+            <div class="card-header d-flex justify-content-between grediante">
+                <h4 class="text-white">Generate Token</h4>
+
+                <button class="btn btn-large btn-warning text-black" (click)="back()"><i
+                        class="fa-solid fa-circle-arrow-left"></i> Back</button>
+            </div>
+            <!-- <input class="form-control" type="text" placeholder="Search user.."> -->
+            <div class="card-body p-0">
+                <!--generate token-->
+                <div class="card" ng-app="">
+                    <div class="card-body">
+                        <div class="content-page">
+                            <div class="table-responsive p-2">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td style="color:#000">URL</td>
+                                            <td style="color:#000">
+                                                https://www.apnabank.com/bankingapi/rest/auth/generateToken</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">METHOD</td>
+                                            <td style="color:#000">POST</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">Content Type</td>
+                                            <td style="color:#000">application/json</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Parameters</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" title="Required">username<sup class="text-danger"><i
+                                                        class="fa fa-asterisk"></i></sup></td>
+                                            <td style="color:#000">Your username here</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" title="Required">password<sup class="text-danger"><i
+                                                        class="fa fa-asterisk"></i></sup></td>
+                                            <td style="color:#000">Your password here</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Sample Request Body</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" colspan="2">
+                                                <!-- <p>
+                                            
+                                                "{{ '{<br>"username": "gxxxxxv",<br> "password": "axxxxx#"<br>}'}}"
+                                            
+                                        </p> -->
+
+                                                <h3>{{ '{'}}</h3>
+                                                <div class="payload">
+                                                    <h4>"username": "username here",</h4>
+                                                    <h4>"password": "passwrod here"</h4>
+                                                </div>
+
+                                                <h3>{{ '}'}}</h3>
+
+
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Sample Response Body</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" colspan="2">
+                                                <div>
+                                                    <h3>{{ '{'}}</h3>
+                                                    <h4>"errors": [],</h4>
+                                                    <h4>"messages": ["Token Generated Successfully."],</h4>
+                                                    <h4>"payload":</h4>
+                                                    <div class="payload">
+                                                        <h4> {{ '{'}}</h4>
+                                                        <h4>"token":"adsflkjdfkljalkfjalkfjadslkfadfkjdlfkjdlfkdlkdfldkfjldkfdlkfdjlfkdjlfkdjlk"
+                                                        </h4>
+                                                        <h3>{{ '}'}}</h3>
+                                                    </div>
+
+                                                    <h3>{{ '}'}}</h3>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--end row-->
+            </div>
+        </div>
+        <!-- / Project list  -->
+
+    </div>
+</div>
+<!-- /Page Wrapper -->

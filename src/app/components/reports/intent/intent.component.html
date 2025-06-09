@@ -1,0 +1,134 @@
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+    <div class="content">
+
+        <!-- Breadcrumb -->
+        <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
+            <div class="my-auto mb-2">
+                <h2 class="mb-1">Reports</h2>
+
+            </div>
+            <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
+                <!-- <div class="mb-2">
+							<a [routerLink]="['/users/create']" class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Create user</a>
+						</div> -->
+
+            </div>
+        </div>
+        <!-- /Breadcrumb -->
+
+        <!-- Project list -->
+
+        <!-- for filter card -->
+
+        <div class="card p-4">
+            <h2 class="filter-text mb-4">Intent Filter</h2>
+            <form>
+                <div class="row g-3">
+                    <!-- Search User -->
+                    <div class="col-md-4 col-lg-2">
+                        <label class="form-label">Search User</label>
+                        <input type="text" class="form-control" placeholder="Enter username">
+                    </div>
+
+                    <!-- Status Select -->
+                    <div class="col-md-4 col-lg-2">
+                        <label class="form-label">Status</label>
+                        <select class="form-select">
+                            <option value="">Select Status</option>
+                            <option>Success</option>
+                            <option>Processing</option>
+                        </select>
+                    </div>
+
+                    <!-- Date From -->
+                    <div class="col-md-4 col-lg-2">
+                        <label class="form-label">Date From</label>
+                        <input type="date" class="form-control">
+                    </div>
+
+                    <!-- Date To -->
+                    <div class="col-md-4 col-lg-2">
+                        <label class="form-label">Date To</label>
+                        <input type="date" class="form-control">
+                    </div>
+
+                    <!-- Type Select -->
+                    <!-- <div class="col-md-4 col-lg-2">
+                        <label class="form-label">Type</label>
+                        <select class="form-select">
+                            <option value="">Select Type</option>
+                            <option>WalletLoad</option>
+                            <option>Payout</option>
+                            <option>Payin</option>
+                            <option>Checkback</option>
+                        </select>
+                    </div> -->
+
+                    <!-- Buttons -->
+                    <div class="col-md-12 col-lg-2 d-flex align-items-end gap-2 buttons_groups">
+                        <button type="submit" class="btn btn-sm btn-primary" title="Search record"><i
+                                class="fa fa-search"></i></button>
+                        <button type="button" class="btn btn-sm btn-success" title="Download Excel"><i
+                                class="fa-solid fa-file-excel"></i></button>
+                        <button type="button" class="btn btn-sm btn-danger" title="Download Pdf"><i
+                                class="fa-solid fa-file-pdf"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <input class="form-control mt-3" type="search" placeholder="Search txn..." name="" id="">
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="card-header d-flex justify-content-between grediante">
+                <h4 class="text-white">Generated Intent</h4>
+
+                <button class="btn btn-large btn-warning text-black" (click)="back()"><i
+                        class="fa-solid fa-circle-arrow-left"></i> Back</button>
+            </div>
+            <!-- <input class="form-control" type="text" placeholder="Search user.."> -->
+            <div class="card-body p-0">
+                <div class="custom-datatable-filter table-responsive">
+
+                    <table class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Sr.No</th>
+                                <th>OrderId</th>
+                                <th>TxnId</th>
+                                <th>Status</th>
+                                <th>Amount</th>
+                                <th>UTR</th>
+                                <th>UPI ID</th>
+                                <th>User</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>1230465465</td>
+                                <td>adfdf65465</td>
+                                <td><span class="badge rounded-pill bg-primary">Success</span></td>
+                                <td>100</td>
+                                <td>65432145</td>
+                                <td>upi@9879</td>
+                                <td>Diwakar</td>
+                                <td>2025-06-02 16.20.23</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- / Project list  -->
+
+    </div>
+</div>
+<!-- /Page Wrapper -->

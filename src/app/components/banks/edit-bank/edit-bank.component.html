@@ -1,0 +1,98 @@
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+    <div class="content">
+
+        <!-- Breadcrumb -->
+        <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
+            <div class="my-auto mb-2">
+                <h2 class="mb-1">Banks</h2>
+
+            </div>
+            <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
+                <div class="mb-2">
+                    <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#add_project"
+                        class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Edit
+                        Bank</a> -->
+                </div>
+
+            </div>
+        </div>
+        <!-- /Breadcrumb -->
+
+        <!-- Project list -->
+        <div class="card">
+            <div class="card-header d-flex justify-content-between grediante">
+                <h4 class="text-white">Update</h4>
+                <button class="btn btn-large btn-warning text-black" (click)="back()"><i class="fa-solid fa-circle-arrow-left"></i>
+                    Back</button>
+            </div>
+            <div class="card-body p-2">
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="beneName" class="form-label">Beneficiary Name</label>
+                                <input type="text" class="form-control" id="beneName"
+                                    placeholder="Apna Banking System Ltd.">
+                            </div>
+                        </div>
+                        <div class=" col-md-4">
+                            <div class="mb-3">
+                                <label for="bank" class="form-label">Bank Name</label>
+                                <input type="text" class="form-control" id="bank" placeholder="State Bank of India">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="acNo" class="form-label">Account Number</label>
+                                <input type="text" class="form-control" id="acNo" placeholder="1234567890">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="ifsc" class="form-label">IFSC</label>
+                                <input type="text" class="form-control" id="ifsc" placeholder="SBIN025896">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="mobile" class="form-label">Mobile</label>
+                                <input type="number" class="form-control" id="mobile" placeholder="9638527410">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="pincode" class="form-label">Pincode</label>
+                                <input type="number" class="form-control" id="pincode" placeholder="546520">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="paymentOp" class="form-label">Payment Option
+                                    Name</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="IMPS" selected>IMPS</option>
+                                    <option value="NEFT">NEFT</option>
+                                    <option value="RTGS">RTGS</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-4">
+                            <div class="mb-3">
+                                <button class="btn btn-large btn-success">Submit</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- / Project list  -->
+
+    </div>
+</div>
+<!-- /Page Wrapper -->

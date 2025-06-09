@@ -1,0 +1,92 @@
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+    <div class="content">
+
+        <!-- Breadcrumb -->
+        <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
+            <div class="my-auto mb-2">
+                <h2 class="mb-1">API Docs</h2>
+
+            </div>
+            <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
+                <div class="mb-2">
+                    <!-- <a [routerLink]="['/users/create']" class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Create user</a> -->
+                </div>
+
+            </div>
+        </div>
+        <!-- /Breadcrumb -->
+
+        <!-- Project list -->
+        <div class="card">
+            <div class="card-header d-flex justify-content-between grediante">
+                <h4 class="text-white">Balance Enquiry</h4>
+
+                <button class="btn btn-large btn-warning text-black" (click)="back()"><i
+                        class="fa-solid fa-circle-arrow-left"></i> Back</button>
+            </div>
+            <!-- <input class="form-control" type="text" placeholder="Search user.."> -->
+            <div class="card-body p-0">
+                <!--payout-->
+                <div class="card" ng-app="">
+                    <div class="card-header">
+                        <h2 class="text-primary">Balance Enquiry</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="content-page">
+                            <div class="table-responsive p-2">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td style="color:#000">URL</td>
+                                            <td style="color:#000">
+                                                https://www.apnabank.com/bankingapi/rest/auth/transaction/balanceEnquiry
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">METHOD</td>
+                                            <td style="color:#000">GET</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Header</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000">Authorization</td>
+                                            <td style="color:#000">Bearer <b>Put your generated token here</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#4b9ebd" colspan="2">Sample Response Body</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#000" colspan="2">
+                                                <h3>{{ '{'}}</h3>
+                                                <div class="payload">
+                                                    <h4>"mainWallet": "100.0",</h4>
+                                                    <h4>"PayoutWallet": "200.0",</h4>
+                                                    <h4>"lien": "100",</h4>
+                                                    <h4>"status": "SUCCESS",</h4>
+                                                    <h4>"isError": "false",</h4>
+                                                    <h4>"msg": "Balance fetched successfully",</h4>
+                                                </div>
+                                                <h3>{{ '}'}}</h3>
+                                            </td>
+                                        </tr>
+
+                                    </thead>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--end row-->
+            </div>
+        </div>
+        <!-- / Project list  -->
+
+    </div>
+</div>
+<!-- /Page Wrapper -->

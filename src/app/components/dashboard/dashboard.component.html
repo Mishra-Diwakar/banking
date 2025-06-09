@@ -1,0 +1,416 @@
+<div class="page-wrapper">
+    <div class="content">
+        <!-- Breadcrumb -->
+        <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
+            <div class="my-auto mb-2">
+                <h2 class="mb-1">Dashboard</h2>
+
+            </div>
+            <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
+
+            </div>
+        </div>
+        <!-- /Breadcrumb -->
+
+        <!-- Welcome Wrap -->
+        <div class="card border-0">
+            <div class="card-body d-flex align-items-center justify-content-between flex-wrap pb-1">
+                <div class="d-flex align-items-center mb-3">
+                    <span class="avatar avatar-xl flex-shrink-0">
+                        <img src="assets/img/profiles/avatar-31.jpg" class="rounded-circle" alt="img">
+                    </span>
+                    <div class="ms-3">
+                        <h3 class="mb-2">Welcome Back, Diwakar </h3>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center flex-wrap mb-1">
+                    <!-- <a href="#" class="btn btn-secondary btn-md me-2 mb-2" data-bs-toggle="modal" data-bs-target="#add_project"><i class="ti ti-square-rounded-plus me-1"></i>Add Project</a> -->
+                    <!-- <a href="#" class="btn btn-primary btn-md mb-2" data-bs-toggle="modal" data-bs-target="#add_leaves"><i class="ti ti-square-rounded-plus me-1"></i>Add Requests</a> -->
+                </div>
+            </div>
+        </div>
+        <!-- /Welcome Wrap -->
+
+        <div class="row">
+
+            <!-- Widget Info -->
+            <div class="col-xxl-12 d-flex">
+                <div class="row flex-fill">
+                    <div class="col-md-3 d-flex" *ngIf="userType=='admin'">
+                        <div class="card flex-fill">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center h-100">
+
+                                    <div>
+                                        <h6 class="fs-15 fw-medium text-default mb-1">Profit</h6>
+                                        <h3 class="mb-3">500000 <span class="fs-12 fw-medium text-danger"></span></h3>
+                                    </div>
+                                    <div>
+                                        <span class="avatar rounded-circle bg-info mb-2">
+                                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+
+                                <!-- <a href="clients.html" class="link-default">View All</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex">
+                        <div class="card flex-fill">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center h-100">
+                                    <div>
+                                        <h6 class="fs-15 fw-medium text-default mb-1">MainWallet</h6>
+                                        <h3 class="mb-3">100000 <span class="fs-12 fw-medium text-success"></span></h3>
+                                    </div>
+                                    <div>
+                                        <span class="avatar rounded-circle bg-primary mb-2">
+                                            <i class="ti ti-calendar-share fs-16"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- <a href="attendance-employee.html" class="link-default">View Details</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex">
+                        <div class="card flex-fill">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center h-100">
+                                    <div>
+                                        <h6 class="fs-15 fw-medium text-default mb-1">PayoutWallet</h6>
+                                        <h3 class="mb-3">90000 <span class="fs-12 fw-medium text-danger"></span></h3>
+                                    </div>
+                                    <div>
+                                        <span class="avatar rounded-circle bg-secondary mb-2">
+                                            <i class="ti ti-browser fs-16"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+
+                                <!-- <a href="projects.html" class="link-default">View All</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex">
+                        <div class="card flex-fill">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center h-100">
+                                    <div>
+                                        <h6 class="fs-15 fw-medium text-default mb-1">Lien</h6>
+                                        <h3 class="mb-3">6000 <span class="fs-12 fw-medium text-danger"></span></h3>
+                                    </div>
+                                    <div>
+                                        <span class="avatar rounded-circle bg-danger mb-2">
+                                            <i class="fa-solid fa-lock"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- <a href="clients.html" class="link-default">View All</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Total Employee -->
+            <!-- <div class="col-xxl-4 d-flex">
+                <div class="card flex-fill">
+                    <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
+                        <h5 class="mb-2">User Status</h5>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between mb-1">
+                            <p class="fs-13 mb-3">Total User</p>
+                            <h3 class="mb-3">154</h3>
+                        </div>
+                        <div class="progress-stacked emp-stack mb-3">
+                            <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                <div class="progress-bar bg-warning"></div>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="30"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                <div class="progress-bar bg-secondary"></div>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                <div class="progress-bar bg-danger"></div>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="Segment four" aria-valuenow="20"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                                <div class="progress-bar bg-pink"></div>
+                            </div>
+                        </div>
+                        <div class="border mb-3">
+                            <div class="row gx-0">
+                                <div class="col-6">
+                                    <div class="p-2 flex-fill border-end border-bottom">
+                                        <p class="fs-13 mb-2"><i
+                                                class="ti ti-square-filled text-primary fs-12 me-2"></i>Active</p>
+                                        <h2 class="display-1">112</h2>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-2 flex-fill border-bottom text-end">
+                                        <p class="fs-13 mb-2"><i
+                                                class="ti ti-square-filled me-2 text-secondary fs-12"></i>Blocked </p>
+                                        <h2 class="display-1">112</h2>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-2 flex-fill border-end">
+                                        <p class="fs-13 mb-2"><i
+                                                class="ti ti-square-filled me-2 text-danger fs-12"></i>API User</p>
+                                        <h2 class="display-1">12</h2>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-2 flex-fill text-end">
+                                        <p class="fs-13 mb-2"><i
+                                                class="ti ti-square-filled text-pink me-2 fs-12"></i>Staff</p>
+                                        <h2 class="display-1">04</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="mb-2">Top Performer</h6>
+                        <div
+                            class="p-2 d-flex align-items-center justify-content-between border border-primary bg-primary-100 br-5 mb-4">
+                            <div class="d-flex align-items-center overflow-hidden">
+                                <span class="me-2">
+                                    <i class="ti ti-award-filled text-primary fs-24"></i>
+                                </span>
+                                <a class="avatar avatar-md me-2">
+                                    <img src="assets/img/profiles/avatar-24.jpg"
+                                        class="rounded-circle border border-white" alt="img">
+                                </a>
+                                <div>
+                                    <h6 class="text-truncate mb-1 fs-14 fw-medium"><a>Aman
+                                            Singh</a></h6>
+                                    <p class="fs-13">API User</p>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <p class="fs-13 mb-1">Performance</p>
+                                <h5 class="text-primary">99000000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- /Total Employee -->
+
+            <!-- Attendance Overview -->
+            <div class="col-xxl-6 col-xl-6 d-flex">
+                <div class="card flex-fill">
+                    <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
+                        <h5 class="mb-2">Transaction Overview</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="chartjs-wrapper-demo position-relative mb-4">
+                            <canvas id="attendance" height="200"></canvas>
+                        </div>
+                        <h6 class="mb-3">Status</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="f-13 mb-2"><i class="ti ti-circle-filled text-success me-1"></i>Success</p>
+                            <p class="f-13 fw-medium text-gray-9 mb-2">600</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="f-13 mb-2"><i class="ti ti-circle-filled text-secondary me-1"></i>Processing</p>
+                            <p class="f-13 fw-medium text-gray-9 mb-2">10</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="f-13 mb-2"><i class="ti ti-circle-filled text-warning me-1"></i>Failed</p>
+                            <p class="f-13 fw-medium text-gray-9 mb-2">20</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <p class="f-13 mb-2"><i class="ti ti-circle-filled text-danger me-1"></i>Refund</p>
+                            <p class="f-13 fw-medium text-gray-9 mb-2">20</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /Attendance Overview -->
+
+            <!-- Clock-In/Out -->
+            <div class="col-xxl-6 col-xl-6 d-flex">
+                <div class="card flex-fill">
+                    <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
+                        <h5 class="mb-2">Business Overview</h5>
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <div
+                                class="d-flex align-items-center justify-content-between mb-3 p-2 border border-dashed br-5">
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:void(0);" class="avatar flex-shrink-0">
+                                        <img src="assets/img/profiles/transaction.png"
+                                            class="rounded-circle border border-2 bg-info" alt="img">
+                                    </a>
+                                    <div class="ms-2">
+                                        <h6 class="fs-14 fw-medium text-truncate">Payin Transaction</h6>
+                                        <!-- <p class="fs-13">UI/UX Designer</p> -->
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:void(0);" class="link-default me-2"></a>
+                                    <span
+                                        class="fs-15 fw-medium d-inline-flex align-items-center badge badge-info">100</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-3 p-2 border br-5">
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:void(0);" class="avatar flex-shrink-0">
+                                        <img src="assets/img/profiles/up-arrow.png"
+                                            class="rounded-circle border border-2" alt="img">
+                                    </a>
+                                    <div class="ms-2">
+                                        <h6 class="fs-14 fw-medium">Payin Amount</h6>
+                                        <!-- <p class="fs-13">Project Manager</p> -->
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:void(0);" class="link-default me-2"></a>
+                                    <span
+                                        class="fs-15 fw-medium d-inline-flex align-items-center badge badge-success">100000</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-3 p-2 border br-5">
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:void(0);" class="avatar flex-shrink-0">
+                                        <img src="assets/img/profiles/transaction.png"
+                                            class="rounded-circle border border-2 bg-warning" alt="img">
+                                    </a>
+                                    <div class="ms-2">
+                                        <h6 class="fs-14 fw-medium">Payout Transaction</h6>
+                                        <!-- <p class="fs-13">Project Manager</p> -->
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:void(0);" class="link-default me-2"></a>
+                                    <span
+                                        class="fs-15 fw-medium d-inline-flex align-items-center badge badge-warning">1000</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-3 p-2 border br-5">
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:void(0);" class="avatar flex-shrink-0">
+                                        <img src="assets/img/profiles/down-arrow.png"
+                                            class="rounded-circle border border-2" alt="img">
+                                    </a>
+                                    <div class="ms-2">
+                                        <h6 class="fs-14 fw-medium">Payout Amount</h6>
+                                        <!-- <p class="fs-13">Project Manager</p> -->
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:void(0);" class="link-default me-2"></a>
+                                    <span
+                                        class="fs-15 fw-medium d-inline-flex align-items-center badge badge-danger">100000</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /Clock-In/Out -->
+
+        </div>
+
+        <div class="row">
+
+            <!-- Projects -->
+            <div class="col-xxl-12 col-xl-12 d-flex">
+                <div class="card flex-fill">
+                    <div class="card-header pb-2 d-flex align-items-center justify-content-between flex-wrap">
+                        <h5 class="mb-2">Recent Transaction</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-nowrap mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>Sr.No</th>
+                                        <th>Name</th>
+                                        <th>Service</th>
+                                        <th>Status</th>
+                                        <th>Amount</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>
+                                            <h6 class="fw-medium">Rajesh singh</h6>
+                                        </td>
+                                        <td>Payout</td>
+                                        <td>Success</td>
+                                        <td>15000</td>
+                                        <td>2025-06-02 10.20.32</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>
+                                            <h6 class="fw-medium">Rajesh singh</h6>
+                                        </td>
+                                        <td>Payout</td>
+                                        <td>Success</td>
+                                        <td>15000</td>
+                                        <td>2025-06-02 10.20.32</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>
+                                            <h6 class="fw-medium">Rajesh singh</h6>
+                                        </td>
+                                        <td>Payout</td>
+                                        <td>Success</td>
+                                        <td>15000</td>
+                                        <td>2025-06-02 10.20.32</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>
+                                            <h6 class="fw-medium">Rajesh singh</h6>
+                                        </td>
+                                        <td>Payout</td>
+                                        <td>Success</td>
+                                        <td>15000</td>
+                                        <td>2025-06-02 10.20.32</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>
+                                            <h6 class="fw-medium">Rajesh singh</h6>
+                                        </td>
+                                        <td>Payout</td>
+                                        <td>Success</td>
+                                        <td>15000</td>
+                                        <td>2025-06-02 10.20.32</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Projects -->
+
+        </div>
+
+
+
+    </div>
+
+</div>

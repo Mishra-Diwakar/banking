@@ -1,0 +1,65 @@
+	<!-- Page Wrapper -->
+		<div class="page-wrapper">
+			<div class="content">
+
+				<!-- Breadcrumb -->
+				<div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
+					<div class="my-auto mb-2">
+						<h2 class="mb-1">Banks</h2>
+						
+					</div>
+					<div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
+						<div class="mb-2">
+							<a [routerLink]="['/banks/add']" class="btn btn-primary d-flex align-items-center"><i class="ti ti-circle-plus me-2"></i>Add Bank</a>
+						</div>
+						
+					</div>
+				</div>
+				<!-- /Breadcrumb -->
+
+				<!-- Project list -->
+				<div class="card">
+					<div class="card-header d-flex justify-content-between grediante">
+						<h4 class="text-white">Bank List</h4>
+                        <button class="btn btn-large btn-warning text-black" (click)="back()"><i class="fa-solid fa-circle-arrow-left"></i> Back</button>
+					</div>
+					<div class="card-body p-0">
+						<div class="custom-datatable-filter table-responsive">
+							<table class="table">
+								<thead class="thead-light">
+									<tr>
+										<th>Sr.No</th>
+										<th>Beneficiary Name</th>
+										<th>Bank</th>
+										<th>Account No</th>
+										<th>IFSC</th>
+										<th>Created At</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td><h6 class="fw-medium">Diwakar Mishra</h6></td>
+										<td>Central Bank of India</td>
+										<td>123456789012</td>
+										<td>CBIN0256341</td>
+										<td>2025-06-02 16.20.23</td>
+										<td>
+											<div class="action-icon d-inline-flex">
+												<a [routerLink]="['/banks/update']"><i class="ti ti-edit"></i></a>
+												<a href="#" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="ti ti-trash"></i></a>
+											</div>
+										</td>
+									</tr>
+                                    
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- / Project list  -->
+
+			</div>
+		</div>
+		<!-- /Page Wrapper -->

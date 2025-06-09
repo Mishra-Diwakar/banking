@@ -1,0 +1,4 @@
+.grediante {
+    background: #403737;
+    background: linear-gradient(90deg, rgba(64, 55, 55, 1) 2%, rgba(253, 55, 29, 0.86) 69%, rgba(252, 176, 69, 1) 100%);
+}
